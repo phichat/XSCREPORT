@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DATASETREPORT" targetNamespace="http://tempuri.org/DATASETREPORT.xsd" xmlns:mstns="http://tempuri.org/DATASETREPORT.xsd" xmlns="http://tempuri.org/DATASETREPORT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DATASETREPORT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DATASETREPORT" msprop:Generator_UserDSName="DATASETREPORT">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LawsuitArrestgetByCon" msprop:Generator_TableClassName="LawsuitArrestgetByConDataTable" msprop:Generator_TableVarName="tableLawsuitArrestgetByCon" msprop:Generator_RowChangedName="LawsuitArrestgetByConRowChanged" msprop:Generator_TablePropName="LawsuitArrestgetByCon" msprop:Generator_RowDeletingName="LawsuitArrestgetByConRowDeleting" msprop:Generator_RowChangingName="LawsuitArrestgetByConRowChanging" msprop:Generator_RowEvHandlerName="LawsuitArrestgetByConRowChangeEventHandler" msprop:Generator_RowDeletedName="LawsuitArrestgetByConRowDeleted" msprop:Generator_RowClassName="LawsuitArrestgetByConRow" msprop:Generator_UserTableName="LawsuitArrestgetByCon" msprop:Generator_RowEvArgName="LawsuitArrestgetByConRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ArrestCode" msprop:Generator_ColumnVarNameInTable="columnArrestCode" msprop:Generator_ColumnPropNameInRow="ArrestCode" msprop:Generator_ColumnPropNameInTable="ArrestCodeColumn" msprop:Generator_UserColumnName="ArrestCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ls.OfficeName" msprop:Generator_ColumnVarNameInTable="_columnls_OfficeName" msprop:Generator_ColumnPropNameInRow="_ls_OfficeName" msprop:Generator_ColumnPropNameInTable="_ls_OfficeNameColumn" msprop:Generator_UserColumnName="ls.OfficeName" type="xs:string" minOccurs="0" />
+              <xs:element name="LawsuitStation" msprop:Generator_ColumnVarNameInTable="columnLawsuitStation" msprop:Generator_ColumnPropNameInRow="LawsuitStation" msprop:Generator_ColumnPropNameInTable="LawsuitStationColumn" msprop:Generator_UserColumnName="LawsuitStation" type="xs:string" minOccurs="0" />
+              <xs:element name="LawsuitNo" msprop:Generator_ColumnVarNameInTable="columnLawsuitNo" msprop:Generator_ColumnPropNameInRow="LawsuitNo" msprop:Generator_ColumnPropNameInTable="LawsuitNoColumn" msprop:Generator_UserColumnName="LawsuitNo" type="xs:string" minOccurs="0" />
+              <xs:element name="LawsuitDate" msprop:Generator_ColumnVarNameInTable="columnLawsuitDate" msprop:Generator_ColumnPropNameInRow="LawsuitDate" msprop:Generator_ColumnPropNameInTable="LawsuitDateColumn" msprop:Generator_UserColumnName="LawsuitDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="las.Name" msprop:Generator_ColumnVarNameInTable="_columnlas_Name" msprop:Generator_ColumnPropNameInRow="_las_Name" msprop:Generator_ColumnPropNameInTable="_las_NameColumn" msprop:Generator_UserColumnName="las.Name" type="xs:string" minOccurs="0" />
+              <xs:element name="las.PositionName" msprop:Generator_ColumnVarNameInTable="_columnlas_PositionName" msprop:Generator_ColumnPropNameInRow="_las_PositionName" msprop:Generator_ColumnPropNameInTable="_las_PositionNameColumn" msprop:Generator_UserColumnName="las.PositionName" type="xs:string" minOccurs="0" />
+              <xs:element name="las.OfficeShortName" msprop:Generator_ColumnVarNameInTable="_columnlas_OfficeShortName" msprop:Generator_ColumnPropNameInRow="_las_OfficeShortName" msprop:Generator_ColumnPropNameInTable="_las_OfficeShortNameColumn" msprop:Generator_UserColumnName="las.OfficeShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="LawbreakerName" msprop:Generator_ColumnVarNameInTable="columnLawbreakerName" msprop:Generator_ColumnPropNameInRow="LawbreakerName" msprop:Generator_ColumnPropNameInTable="LawbreakerNameColumn" msprop:Generator_UserColumnName="LawbreakerName" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyTitle" msprop:Generator_ColumnVarNameInTable="columnCompanyTitle" msprop:Generator_ColumnPropNameInRow="CompanyTitle" msprop:Generator_ColumnPropNameInTable="CompanyTitleColumn" msprop:Generator_UserColumnName="CompanyTitle" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductDesc" msprop:Generator_ColumnVarNameInTable="columnProductDesc" msprop:Generator_ColumnPropNameInRow="ProductDesc" msprop:Generator_ColumnPropNameInTable="ProductDescColumn" msprop:Generator_UserColumnName="ProductDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductQtyUnit" msprop:Generator_ColumnVarNameInTable="columnProductQtyUnit" msprop:Generator_ColumnPropNameInRow="ProductQtyUnit" msprop:Generator_ColumnPropNameInTable="ProductQtyUnitColumn" msprop:Generator_UserColumnName="ProductQtyUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="GuiltBaseName" msprop:Generator_ColumnVarNameInTable="columnGuiltBaseName" msprop:Generator_ColumnPropNameInRow="GuiltBaseName" msprop:Generator_ColumnPropNameInTable="GuiltBaseNameColumn" msprop:Generator_UserColumnName="GuiltBaseName" type="xs:string" minOccurs="0" />
+              <xs:element name="IsLawsuit" msprop:Generator_ColumnVarNameInTable="columnIsLawsuit" msprop:Generator_ColumnPropNameInRow="IsLawsuit" msprop:Generator_ColumnPropNameInTable="IsLawsuitColumn" msprop:Generator_UserColumnName="IsLawsuit" type="xs:int" minOccurs="0" />
+              <xs:element name="ReasonDontLawsuit" msprop:Generator_ColumnVarNameInTable="columnReasonDontLawsuit" msprop:Generator_ColumnPropNameInRow="ReasonDontLawsuit" msprop:Generator_ColumnPropNameInTable="ReasonDontLawsuitColumn" msprop:Generator_UserColumnName="ReasonDontLawsuit" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductQty" msprop:Generator_ColumnVarNameInTable="columnProductQty" msprop:Generator_ColumnPropNameInRow="ProductQty" msprop:Generator_ColumnPropNameInTable="ProductQtyColumn" msprop:Generator_UserColumnName="ProductQty" type="xs:int" minOccurs="0" />
+              <xs:element name="Lawsuitday" msprop:Generator_ColumnVarNameInTable="columnLawsuitday" msprop:Generator_ColumnPropNameInRow="Lawsuitday" msprop:Generator_ColumnPropNameInTable="LawsuitdayColumn" msprop:Generator_UserColumnName="Lawsuitday" type="xs:string" minOccurs="0" />
+              <xs:element name="Lawsuitmonth" msprop:Generator_ColumnVarNameInTable="columnLawsuitmonth" msprop:Generator_ColumnPropNameInRow="Lawsuitmonth" msprop:Generator_ColumnPropNameInTable="LawsuitmonthColumn" msprop:Generator_UserColumnName="Lawsuitmonth" type="xs:string" minOccurs="0" />
+              <xs:element name="Lawsuityear" msprop:Generator_ColumnVarNameInTable="columnLawsuityear" msprop:Generator_ColumnPropNameInRow="Lawsuityear" msprop:Generator_ColumnPropNameInTable="LawsuityearColumn" msprop:Generator_UserColumnName="Lawsuityear" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ArrestgetByCon" msprop:Generator_TableClassName="ArrestgetByConDataTable" msprop:Generator_TableVarName="tableArrestgetByCon" msprop:Generator_TablePropName="ArrestgetByCon" msprop:Generator_RowDeletingName="ArrestgetByConRowDeleting" msprop:Generator_RowChangingName="ArrestgetByConRowChanging" msprop:Generator_RowEvHandlerName="ArrestgetByConRowChangeEventHandler" msprop:Generator_RowDeletedName="ArrestgetByConRowDeleted" msprop:Generator_UserTableName="ArrestgetByCon" msprop:Generator_RowChangedName="ArrestgetByConRowChanged" msprop:Generator_RowEvArgName="ArrestgetByConRowChangeEvent" msprop:Generator_RowClassName="ArrestgetByConRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ArrestCode" msprop:Generator_ColumnVarNameInTable="columnArrestCode" msprop:Generator_ColumnPropNameInRow="ArrestCode" msprop:Generator_ColumnPropNameInTable="ArrestCodeColumn" msprop:Generator_UserColumnName="ArrestCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ArrestStation" msprop:Generator_ColumnVarNameInTable="columnArrestStation" msprop:Generator_ColumnPropNameInRow="ArrestStation" msprop:Generator_ColumnPropNameInTable="ArrestStationColumn" msprop:Generator_UserColumnName="ArrestStation" type="xs:string" minOccurs="0" />
+              <xs:element name="AS.Name6" msprop:Generator_ColumnVarNameInTable="_columnAS_Name6" msprop:Generator_ColumnPropNameInRow="_AS_Name6" msprop:Generator_ColumnPropNameInTable="_AS_Name6Column" msprop:Generator_UserColumnName="AS.Name6" type="xs:string" minOccurs="0" />
+              <xs:element name="ArrestTime" msprop:Generator_ColumnVarNameInTable="columnArrestTime" msprop:Generator_ColumnPropNameInRow="ArrestTime" msprop:Generator_ColumnPropNameInTable="ArrestTimeColumn" msprop:Generator_UserColumnName="ArrestTime" type="xs:string" minOccurs="0" />
+              <xs:element name="AS.PositionName" msprop:Generator_ColumnVarNameInTable="_columnAS_PositionName" msprop:Generator_ColumnPropNameInRow="_AS_PositionName" msprop:Generator_ColumnPropNameInTable="_AS_PositionNameColumn" msprop:Generator_UserColumnName="AS.PositionName" type="xs:string" minOccurs="0" />
+              <xs:element name="AS.Nameup6" msprop:Generator_ColumnVarNameInTable="_columnAS_Nameup6" msprop:Generator_ColumnPropNameInRow="_AS_Nameup6" msprop:Generator_ColumnPropNameInTable="_AS_Nameup6Column" msprop:Generator_UserColumnName="AS.Nameup6" type="xs:string" minOccurs="0" />
+              <xs:element name="AL.count" msprop:Generator_ColumnVarNameInTable="_columnAL_count" msprop:Generator_ColumnPropNameInRow="_AL_count" msprop:Generator_ColumnPropNameInTable="_AL_countColumn" msprop:Generator_UserColumnName="AL.count" type="xs:string" minOccurs="0" />
+              <xs:element name="AL.Name" msprop:Generator_ColumnVarNameInTable="_columnAL_Name" msprop:Generator_ColumnPropNameInRow="_AL_Name" msprop:Generator_ColumnPropNameInTable="_AL_NameColumn" msprop:Generator_UserColumnName="AL.Name" type="xs:string" minOccurs="0" />
+              <xs:element name="AP.ProductDesc" msprop:Generator_ColumnVarNameInTable="_columnAP_ProductDesc" msprop:Generator_ColumnPropNameInRow="_AP_ProductDesc" msprop:Generator_ColumnPropNameInTable="_AP_ProductDescColumn" msprop:Generator_UserColumnName="AP.ProductDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="Behaviour" msprop:Generator_ColumnVarNameInTable="columnBehaviour" msprop:Generator_ColumnPropNameInRow="Behaviour" msprop:Generator_ColumnPropNameInTable="BehaviourColumn" msprop:Generator_UserColumnName="Behaviour" type="xs:string" minOccurs="0" />
+              <xs:element name="GuiltBaseName" msprop:Generator_ColumnVarNameInTable="columnGuiltBaseName" msprop:Generator_ColumnPropNameInRow="GuiltBaseName" msprop:Generator_ColumnPropNameInTable="GuiltBaseNameColumn" msprop:Generator_UserColumnName="GuiltBaseName" type="xs:string" minOccurs="0" />
+              <xs:element name="ai.Location" msprop:Generator_ColumnVarNameInTable="_columnai_Location" msprop:Generator_ColumnPropNameInRow="_ai_Location" msprop:Generator_ColumnPropNameInTable="_ai_LocationColumn" msprop:Generator_UserColumnName="ai.Location" type="xs:string" minOccurs="0" />
+              <xs:element name="OccurrenceTime" msprop:Generator_ColumnVarNameInTable="columnOccurrenceTime" msprop:Generator_ColumnPropNameInRow="OccurrenceTime" msprop:Generator_ColumnPropNameInTable="OccurrenceTimeColumn" msprop:Generator_UserColumnName="OccurrenceTime" type="xs:string" minOccurs="0" />
+              <xs:element name="ArrestDay" msprop:Generator_ColumnVarNameInTable="columnArrestDay" msprop:Generator_ColumnPropNameInRow="ArrestDay" msprop:Generator_ColumnPropNameInTable="ArrestDayColumn" msprop:Generator_UserColumnName="ArrestDay" type="xs:string" minOccurs="0" />
+              <xs:element name="ArrestMonth" msprop:Generator_ColumnVarNameInTable="columnArrestMonth" msprop:Generator_ColumnPropNameInRow="ArrestMonth" msprop:Generator_ColumnPropNameInTable="ArrestMonthColumn" msprop:Generator_UserColumnName="ArrestMonth" type="xs:string" minOccurs="0" />
+              <xs:element name="ArrestYear" msprop:Generator_ColumnVarNameInTable="columnArrestYear" msprop:Generator_ColumnPropNameInRow="ArrestYear" msprop:Generator_ColumnPropNameInTable="ArrestYearColumn" msprop:Generator_UserColumnName="ArrestYear" type="xs:string" minOccurs="0" />
+              <xs:element name="OccurrenceDay" msprop:Generator_ColumnVarNameInTable="columnOccurrenceDay" msprop:Generator_ColumnPropNameInRow="OccurrenceDay" msprop:Generator_ColumnPropNameInTable="OccurrenceDayColumn" msprop:Generator_UserColumnName="OccurrenceDay" type="xs:string" minOccurs="0" />
+              <xs:element name="OccurrenceMonth" msprop:Generator_ColumnVarNameInTable="columnOccurrenceMonth" msprop:Generator_ColumnPropNameInRow="OccurrenceMonth" msprop:Generator_ColumnPropNameInTable="OccurrenceMonthColumn" msprop:Generator_UserColumnName="OccurrenceMonth" type="xs:string" minOccurs="0" />
+              <xs:element name="OccurrenceYear" msprop:Generator_ColumnVarNameInTable="columnOccurrenceYear" msprop:Generator_ColumnPropNameInRow="OccurrenceYear" msprop:Generator_ColumnPropNameInTable="OccurrenceYearColumn" msprop:Generator_UserColumnName="OccurrenceYear" type="xs:string" minOccurs="0" />
+              <xs:element name="Prompt" msprop:Generator_ColumnVarNameInTable="columnPrompt" msprop:Generator_ColumnPropNameInRow="Prompt" msprop:Generator_ColumnPropNameInTable="PromptColumn" msprop:Generator_UserColumnName="Prompt" type="xs:string" minOccurs="0" />
+              <xs:element name="AS.OfficeName" msprop:Generator_ColumnVarNameInTable="_columnAS_OfficeName" msprop:Generator_ColumnPropNameInRow="_AS_OfficeName" msprop:Generator_ColumnPropNameInTable="_AS_OfficeNameColumn" msprop:Generator_UserColumnName="AS.OfficeName" type="xs:string" minOccurs="0" />
+              <xs:element name="ai.Address" msprop:Generator_ColumnVarNameInTable="_columnai_Address" msprop:Generator_ColumnPropNameInRow="_ai_Address" msprop:Generator_ColumnPropNameInTable="_ai_AddressColumn" msprop:Generator_UserColumnName="ai.Address" type="xs:string" minOccurs="0" />
+              <xs:element name="ai.Village" msprop:Generator_ColumnVarNameInTable="_columnai_Village" msprop:Generator_ColumnPropNameInRow="_ai_Village" msprop:Generator_ColumnPropNameInTable="_ai_VillageColumn" msprop:Generator_UserColumnName="ai.Village" type="xs:string" minOccurs="0" />
+              <xs:element name="ai.SubDistrict" msprop:Generator_ColumnVarNameInTable="_columnai_SubDistrict" msprop:Generator_ColumnPropNameInRow="_ai_SubDistrict" msprop:Generator_ColumnPropNameInTable="_ai_SubDistrictColumn" msprop:Generator_UserColumnName="ai.SubDistrict" type="xs:string" minOccurs="0" />
+              <xs:element name="ai.District" msprop:Generator_ColumnVarNameInTable="_columnai_District" msprop:Generator_ColumnPropNameInRow="_ai_District" msprop:Generator_ColumnPropNameInTable="_ai_DistrictColumn" msprop:Generator_UserColumnName="ai.District" type="xs:string" minOccurs="0" />
+              <xs:element name="ai.Province" msprop:Generator_ColumnVarNameInTable="_columnai_Province" msprop:Generator_ColumnPropNameInRow="_ai_Province" msprop:Generator_ColumnPropNameInTable="_ai_ProvinceColumn" msprop:Generator_UserColumnName="ai.Province" type="xs:string" minOccurs="0" />
+              <xs:element name="ai.Road" msprop:Generator_ColumnVarNameInTable="_columnai_Road" msprop:Generator_ColumnPropNameInRow="_ai_Road" msprop:Generator_ColumnPropNameInTable="_ai_RoadColumn" msprop:Generator_UserColumnName="ai.Road" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ArrestgetByCon2" msprop:Generator_TableClassName="ArrestgetByCon2DataTable" msprop:Generator_TableVarName="tableArrestgetByCon2" msprop:Generator_TablePropName="ArrestgetByCon2" msprop:Generator_RowDeletingName="ArrestgetByCon2RowDeleting" msprop:Generator_RowChangingName="ArrestgetByCon2RowChanging" msprop:Generator_RowEvHandlerName="ArrestgetByCon2RowChangeEventHandler" msprop:Generator_RowDeletedName="ArrestgetByCon2RowDeleted" msprop:Generator_UserTableName="ArrestgetByCon2" msprop:Generator_RowChangedName="ArrestgetByCon2RowChanged" msprop:Generator_RowEvArgName="ArrestgetByCon2RowChangeEvent" msprop:Generator_RowClassName="ArrestgetByCon2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ArrestCode" msprop:Generator_ColumnVarNameInTable="columnArrestCode" msprop:Generator_ColumnPropNameInRow="ArrestCode" msprop:Generator_ColumnPropNameInTable="ArrestCodeColumn" msprop:Generator_UserColumnName="ArrestCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ap.ProductDesc" msprop:Generator_ColumnVarNameInTable="_columnap_ProductDesc" msprop:Generator_ColumnPropNameInRow="_ap_ProductDesc" msprop:Generator_ColumnPropNameInTable="_ap_ProductDescColumn" msprop:Generator_UserColumnName="ap.ProductDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CompareArrestgetByIndictmentID" msprop:Generator_TableClassName="CompareArrestgetByIndictmentIDDataTable" msprop:Generator_TableVarName="tableCompareArrestgetByIndictmentID" msprop:Generator_TablePropName="CompareArrestgetByIndictmentID" msprop:Generator_RowDeletingName="CompareArrestgetByIndictmentIDRowDeleting" msprop:Generator_RowChangingName="CompareArrestgetByIndictmentIDRowChanging" msprop:Generator_RowEvHandlerName="CompareArrestgetByIndictmentIDRowChangeEventHandler" msprop:Generator_RowDeletedName="CompareArrestgetByIndictmentIDRowDeleted" msprop:Generator_UserTableName="CompareArrestgetByIndictmentID" msprop:Generator_RowChangedName="CompareArrestgetByIndictmentIDRowChanged" msprop:Generator_RowEvArgName="CompareArrestgetByIndictmentIDRowChangeEvent" msprop:Generator_RowClassName="CompareArrestgetByIndictmentIDRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ComparegetByCon" msprop:Generator_TableClassName="ComparegetByConDataTable" msprop:Generator_TableVarName="tableComparegetByCon" msprop:Generator_TablePropName="ComparegetByCon" msprop:Generator_RowDeletingName="ComparegetByConRowDeleting" msprop:Generator_RowChangingName="ComparegetByConRowChanging" msprop:Generator_RowEvHandlerName="ComparegetByConRowChangeEventHandler" msprop:Generator_RowDeletedName="ComparegetByConRowDeleted" msprop:Generator_UserTableName="ComparegetByCon" msprop:Generator_RowChangedName="ComparegetByConRowChanged" msprop:Generator_RowEvArgName="ComparegetByConRowChangeEvent" msprop:Generator_RowClassName="ComparegetByConRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompareCode" msprop:Generator_ColumnVarNameInTable="columnCompareCode" msprop:Generator_ColumnPropNameInRow="CompareCode" msprop:Generator_ColumnPropNameInTable="CompareCodeColumn" msprop:Generator_UserColumnName="CompareCode" type="xs:string" minOccurs="0" />
+              <xs:element name="CompareStation" msprop:Generator_ColumnVarNameInTable="columnCompareStation" msprop:Generator_ColumnPropNameInRow="CompareStation" msprop:Generator_ColumnPropNameInTable="CompareStationColumn" msprop:Generator_UserColumnName="CompareStation" type="xs:string" minOccurs="0" />
+              <xs:element name="IndictmentDetailID" msprop:Generator_ColumnVarNameInTable="columnIndictmentDetailID" msprop:Generator_ColumnPropNameInRow="IndictmentDetailID" msprop:Generator_ColumnPropNameInTable="IndictmentDetailIDColumn" msprop:Generator_UserColumnName="IndictmentDetailID" type="xs:string" minOccurs="0" />
+              <xs:element name="CompareID" msprop:Generator_ColumnVarNameInTable="columnCompareID" msprop:Generator_ColumnPropNameInRow="CompareID" msprop:Generator_ColumnPropNameInTable="CompareIDColumn" msprop:Generator_UserColumnName="CompareID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CompareDetail" msprop:Generator_TableClassName="CompareDetailDataTable" msprop:Generator_TableVarName="tableCompareDetail" msprop:Generator_TablePropName="CompareDetail" msprop:Generator_RowDeletingName="CompareDetailRowDeleting" msprop:Generator_RowChangingName="CompareDetailRowChanging" msprop:Generator_RowEvHandlerName="CompareDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="CompareDetailRowDeleted" msprop:Generator_UserTableName="CompareDetail" msprop:Generator_RowChangedName="CompareDetailRowChanged" msprop:Generator_RowEvArgName="CompareDetailRowChangeEvent" msprop:Generator_RowClassName="CompareDetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompareDetailID" msprop:Generator_ColumnVarNameInTable="columnCompareDetailID" msprop:Generator_ColumnPropNameInRow="CompareDetailID" msprop:Generator_ColumnPropNameInTable="CompareDetailIDColumn" msprop:Generator_UserColumnName="CompareDetailID" type="xs:string" minOccurs="0" />
+              <xs:element name="CompareID" msprop:Generator_ColumnVarNameInTable="columnCompareID" msprop:Generator_ColumnPropNameInRow="CompareID" msprop:Generator_ColumnPropNameInTable="CompareIDColumn" msprop:Generator_UserColumnName="CompareID" type="xs:string" minOccurs="0" />
+              <xs:element name="IndictmentDetailID" msprop:Generator_ColumnVarNameInTable="columnIndictmentDetailID" msprop:Generator_ColumnPropNameInRow="IndictmentDetailID" msprop:Generator_ColumnPropNameInTable="IndictmentDetailIDColumn" msprop:Generator_UserColumnName="IndictmentDetailID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CompareDetailReceipt" msprop:Generator_TableClassName="CompareDetailReceiptDataTable" msprop:Generator_TableVarName="tableCompareDetailReceipt" msprop:Generator_TablePropName="CompareDetailReceipt" msprop:Generator_RowDeletingName="CompareDetailReceiptRowDeleting" msprop:Generator_RowChangingName="CompareDetailReceiptRowChanging" msprop:Generator_RowEvHandlerName="CompareDetailReceiptRowChangeEventHandler" msprop:Generator_RowDeletedName="CompareDetailReceiptRowDeleted" msprop:Generator_UserTableName="CompareDetailReceipt" msprop:Generator_RowChangedName="CompareDetailReceiptRowChanged" msprop:Generator_RowEvArgName="CompareDetailReceiptRowChangeEvent" msprop:Generator_RowClassName="CompareDetailReceiptRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompareDetailID" msprop:Generator_ColumnVarNameInTable="columnCompareDetailID" msprop:Generator_ColumnPropNameInRow="CompareDetailID" msprop:Generator_ColumnPropNameInTable="CompareDetailIDColumn" msprop:Generator_UserColumnName="CompareDetailID" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalFine" msprop:Generator_ColumnVarNameInTable="columnTotalFine" msprop:Generator_ColumnPropNameInRow="TotalFine" msprop:Generator_ColumnPropNameInTable="TotalFineColumn" msprop:Generator_UserColumnName="TotalFine" type="xs:string" minOccurs="0" />
+              <xs:element name="PaymentDate" msprop:Generator_ColumnVarNameInTable="columnPaymentDate" msprop:Generator_ColumnPropNameInRow="PaymentDate" msprop:Generator_ColumnPropNameInTable="PaymentDateColumn" msprop:Generator_UserColumnName="PaymentDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CompareReceiptID" msprop:Generator_ColumnVarNameInTable="columnCompareReceiptID" msprop:Generator_ColumnPropNameInRow="CompareReceiptID" msprop:Generator_ColumnPropNameInTable="CompareReceiptIDColumn" msprop:Generator_UserColumnName="CompareReceiptID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ComparegetByConKey1">
+      <xs:selector xpath=".//mstns:ComparegetByCon" />
+      <xs:field xpath="mstns:CompareID" />
+    </xs:unique>
+    <xs:unique name="CompareDetailKey1">
+      <xs:selector xpath=".//mstns:CompareDetail" />
+      <xs:field xpath="mstns:CompareDetailID" />
+    </xs:unique>
+    <xs:unique name="CompareDetailReceiptKey1">
+      <xs:selector xpath=".//mstns:CompareDetailReceipt" />
+      <xs:field xpath="mstns:CompareDetailID" />
+      <xs:field xpath="mstns:CompareReceiptID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="CompareDetail_CompareDetailReceipt" msdata:parent="CompareDetail" msdata:child="CompareDetailReceipt" msdata:parentkey="CompareDetailID" msdata:childkey="CompareDetailID" msprop:Generator_UserChildTable="CompareDetailReceipt" msprop:Generator_ChildPropName="GetCompareDetailReceiptRows" msprop:Generator_UserRelationName="CompareDetail_CompareDetailReceipt" msprop:Generator_ParentPropName="CompareDetailRow" msprop:Generator_RelationVarName="relationCompareDetail_CompareDetailReceipt" msprop:Generator_UserParentTable="CompareDetail" />
+      <msdata:Relationship name="ComparegetByCon_CompareDetail" msdata:parent="ComparegetByCon" msdata:child="CompareDetail" msdata:parentkey="CompareID" msdata:childkey="CompareID" msprop:Generator_UserChildTable="CompareDetail" msprop:Generator_ChildPropName="GetCompareDetailRows" msprop:Generator_UserRelationName="ComparegetByCon_CompareDetail" msprop:Generator_ParentPropName="ComparegetByConRow" msprop:Generator_RelationVarName="relationComparegetByCon_CompareDetail" msprop:Generator_UserParentTable="ComparegetByCon" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
