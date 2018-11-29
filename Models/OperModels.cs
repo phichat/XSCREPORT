@@ -287,22 +287,26 @@ namespace XSCREPORT.Models
         {
             try
             {
-                //    var db = new Configs();
-                //    JObject jsonobj = (JObject)JToken.FromObject(model);
-                //    var client = new RestClient("http://" + cc.GetIP + "/ArrestgetByCon");
-                //    var request = new RestRequest(Method.POST);
-                //    request.AddHeader("Postman-Token", "0d7a7694-f469-49b6-b944-8bbfe790bbec");
-                //    request.AddHeader("Cache-Control", "no-cache");
-                //    request.AddHeader("Content-Type", "application/json");
-                //    request.AddParameter("undefined", jsonobj.ToString(), RestSharp.ParameterType.RequestBody);
-                //    IRestResponse response = client.Execute(request);
-                //    //var content = response.Content;
-                //    IRestResponse<List<ArrestgetByCon>> response2 = client.Execute<List<ArrestgetByCon>>(request);
-                //    //Console.WriteLine(response.Content);
+                var db = new Configs();
+                JObject jsonobj = (JObject)JToken.FromObject(model);
+                var client = new RestClient("http://" + cc.GetIP + "/ArrestgetByCon");
+                var request = new RestRequest(Method.POST);
+                request.AddHeader("Postman-Token", "0d7a7694-f469-49b6-b944-8bbfe790bbec");
+                request.AddHeader("Cache-Control", "no-cache");
+                request.AddHeader("Content-Type", "application/json");
+                request.AddParameter("undefined", jsonobj.ToString(), RestSharp.ParameterType.RequestBody);
+                IRestResponse response = client.Execute(request);
+                //var content = response.Content;
+                var response2 = client.Execute<List<ArrestgetByCon>>(request);
+                //Console.WriteLine(response.Content);
                 DataSet dtsr = new DataSet();
 
+                if (response2.Data == null)
+                    return null;
+
                 return dtsr;
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return null;
             }
