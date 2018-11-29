@@ -283,25 +283,46 @@ namespace XSCREPORT.Models
             }
         }
 
-        public DataSet GetReportForm252()
+        public DataSet GetReportForm252(GetReportForm252Model model)
         {
+            var cc = new cf();
             try
             {
                 var db = new Configs();
-                JObject jsonobj = (JObject)JToken.FromObject(model);
-                var client = new RestClient("http://" + cc.GetIP + "/ArrestgetByCon");
+
+                var client = new RestClient("http://" + cc.GetIPCompare + "/ComparegetByCon");
                 var request = new RestRequest(Method.POST);
+                request.AddHeader("Postman-Token", "7328f72d-a9e8-4e4c-bf18-03794e2b5f3b");
+                request.AddHeader("Cache-Control", "no-cache");
+                request.AddHeader("Content-Type", "application/json");
+                request.AddParameter("undefined", "{\"CompareID\": " + model.CompareID + "}", RestSharp.ParameterType.RequestBody);
+                IRestResponse response = client.Execute(request);
+                IRestResponse<List<ComparegetByCon>> resA = client.Execute<List<ComparegetByCon>>(request);
+
+
+                client = new RestClient("http://" + cc.GetIPCompare + "/CompareArrestgetByIndictmentID");
+                request = new RestRequest(Method.POST);
                 request.AddHeader("Postman-Token", "0d7a7694-f469-49b6-b944-8bbfe790bbec");
                 request.AddHeader("Cache-Control", "no-cache");
                 request.AddHeader("Content-Type", "application/json");
-                request.AddParameter("undefined", jsonobj.ToString(), RestSharp.ParameterType.RequestBody);
-                IRestResponse response = client.Execute(request);
-                //var content = response.Content;
-                var response2 = client.Execute<List<ArrestgetByCon>>(request);
-                //Console.WriteLine(response.Content);
+                request.AddParameter("undefined", "{\"IndictmentID\": " + model.IndictmentID + "}", RestSharp.ParameterType.RequestBody);
+                response = client.Execute(request);
+                IRestResponse<List<CompareArrestIndictmentDetail>> resB = client.Execute<List<CompareArrestIndictmentDetail>>(request);
+
+
+                client = new RestClient("http://" + cc.GetIP + "/ArrestgetByCon");
+                request = new RestRequest(Method.POST);
+                request.AddHeader("Postman-Token", "0d7a7694-f469-49b6-b944-8bbfe790bbec");
+                request.AddHeader("Cache-Control", "no-cache");
+                request.AddHeader("Content-Type", "application/json");
+                request.AddParameter("undefined", "{\"ArrestCode\": " + model.ArrestCode + "}", RestSharp.ParameterType.RequestBody);
+                response = client.Execute(request);
+                IRestResponse<List<ArrestgetByCon>> resC = client.Execute<List<ArrestgetByCon>>(request);
+
+
                 DataSet dtsr = new DataSet();
 
-                if (response2.Data == null)
+                if (resA.Data == null)
                     return null;
 
                 return dtsr;

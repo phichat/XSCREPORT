@@ -327,3 +327,5 @@ D:\Tech log\XSCREPORT\XSCREPORT\obj\Debug\XSCREPORT.csproj.CoreCompileInputs.cac
 D:\Tech log\XSCREPORT\XSCREPORT\obj\Debug\XSCREPORT.csproj.CopyComplete
 D:\Tech log\XSCREPORT\XSCREPORT\obj\Debug\XSCREPORT.dll
 D:\Tech log\XSCREPORT\XSCREPORT\obj\Debug\XSCREPORT.pdb
+D:\Tech log\XSCREPORT\XSCREPORT\bin\log4net.dll
+D:\Tech log\XSCREPORT\XSCREPORT\bin\log4net.xml

@@ -31,5 +31,16 @@ namespace XSCREPORT.Properties {
                 return ((string)(this["IPserver"]));
             }
         }
+
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("\"150.95.81.223:8881\"")]
+        public string IPCompare
+        {
+            get
+            {
+                return ((string)(this["IPCompare"]));
+            }
+        }
     }
 }

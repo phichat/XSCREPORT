@@ -2450,7 +2450,7 @@ namespace XSCREPORT.Models {
             
             private global::System.Data.DataColumn _columnB_MatherName;
             
-            private global::System.Data.DataColumn _columnB_IsRequest;
+            private global::System.Data.DataColumn _columnA_IsRequest;
             
             private global::System.Data.DataColumn _columnA_ProductFine;
             
@@ -2659,9 +2659,9 @@ namespace XSCREPORT.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn _B_IsRequestColumn {
+            public global::System.Data.DataColumn _A_IsRequestColumn {
                 get {
-                    return this._columnB_IsRequest;
+                    return this._columnA_IsRequest;
                 }
             }
             
@@ -2740,7 +2740,7 @@ namespace XSCREPORT.Models {
                         string _B_Province, 
                         string _B_FatherName, 
                         string _B_MatherName, 
-                        string _B_IsRequest, 
+                        string _A_IsRequest, 
                         string _A_ProductFine, 
                         string _A_PaymentFineAppointDate) {
                 ReportForm253Row rowReportForm253Row = ((ReportForm253Row)(this.NewRow()));
@@ -2766,7 +2766,7 @@ namespace XSCREPORT.Models {
                         _B_Province,
                         _B_FatherName,
                         _B_MatherName,
-                        _B_IsRequest,
+                        _A_IsRequest,
                         _A_ProductFine,
                         _A_PaymentFineAppointDate};
                 rowReportForm253Row.ItemArray = columnValuesArray;
@@ -2812,7 +2812,7 @@ namespace XSCREPORT.Models {
                 this._columnB_Province = base.Columns["B.Province"];
                 this._columnB_FatherName = base.Columns["B.FatherName"];
                 this._columnB_MatherName = base.Columns["B.MatherName"];
-                this._columnB_IsRequest = base.Columns["B.IsRequest"];
+                this._columnA_IsRequest = base.Columns["A.IsRequest"];
                 this._columnA_ProductFine = base.Columns["A.ProductFine"];
                 this._columnA_PaymentFineAppointDate = base.Columns["A.PaymentFineAppointDate"];
             }
@@ -2902,10 +2902,10 @@ namespace XSCREPORT.Models {
                 this._columnB_MatherName.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnB_MatherName");
                 this._columnB_MatherName.ExtendedProperties.Add("Generator_UserColumnName", "B.MatherName");
                 base.Columns.Add(this._columnB_MatherName);
-                this._columnB_IsRequest = new global::System.Data.DataColumn("B.IsRequest", typeof(string), null, global::System.Data.MappingType.Element);
-                this._columnB_IsRequest.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnB_IsRequest");
-                this._columnB_IsRequest.ExtendedProperties.Add("Generator_UserColumnName", "B.IsRequest");
-                base.Columns.Add(this._columnB_IsRequest);
+                this._columnA_IsRequest = new global::System.Data.DataColumn("A.IsRequest", typeof(string), null, global::System.Data.MappingType.Element);
+                this._columnA_IsRequest.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnA_IsRequest");
+                this._columnA_IsRequest.ExtendedProperties.Add("Generator_UserColumnName", "A.IsRequest");
+                base.Columns.Add(this._columnA_IsRequest);
                 this._columnA_ProductFine = new global::System.Data.DataColumn("A.ProductFine", typeof(string), null, global::System.Data.MappingType.Element);
                 this._columnA_ProductFine.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnA_ProductFine");
                 this._columnA_ProductFine.ExtendedProperties.Add("Generator_UserColumnName", "A.ProductFine");
@@ -5306,17 +5306,17 @@ namespace XSCREPORT.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string _B_IsRequest {
+            public string _A_IsRequest {
                 get {
                     try {
-                        return ((string)(this[this.tableReportForm253._B_IsRequestColumn]));
+                        return ((string)(this[this.tableReportForm253._A_IsRequestColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'B.IsRequest\' in table \'ReportForm253\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'A.IsRequest\' in table \'ReportForm253\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableReportForm253._B_IsRequestColumn] = value;
+                    this[this.tableReportForm253._A_IsRequestColumn] = value;
                 }
             }
             
@@ -5607,14 +5607,14 @@ namespace XSCREPORT.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool Is_B_IsRequestNull() {
-                return this.IsNull(this.tableReportForm253._B_IsRequestColumn);
+            public bool Is_A_IsRequestNull() {
+                return this.IsNull(this.tableReportForm253._A_IsRequestColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Set_B_IsRequestNull() {
-                this[this.tableReportForm253._B_IsRequestColumn] = global::System.Convert.DBNull;
+            public void Set_A_IsRequestNull() {
+                this[this.tableReportForm253._A_IsRequestColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
