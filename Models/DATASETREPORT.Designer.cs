@@ -1935,6 +1935,12 @@ namespace XSCREPORT.Models {
             
             private global::System.Data.DataColumn _columnC_Province;
             
+            private global::System.Data.DataColumn _columnA_PaymentDay;
+            
+            private global::System.Data.DataColumn _columnA_PaymentMonth;
+            
+            private global::System.Data.DataColumn _columnA_PaymentYear;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public ReportForm252DataTable() {
@@ -2098,6 +2104,30 @@ namespace XSCREPORT.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn _A_PaymentDayColumn {
+                get {
+                    return this._columnA_PaymentDay;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn _A_PaymentMonthColumn {
+                get {
+                    return this._columnA_PaymentMonth;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn _A_PaymentYearColumn {
+                get {
+                    return this._columnA_PaymentYear;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2149,7 +2179,10 @@ namespace XSCREPORT.Models {
                         string _C_ArrestTime, 
                         string _C_SubDistinct, 
                         string _C_Distinct, 
-                        string _C_Province) {
+                        string _C_Province, 
+                        string _A_PaymentDay, 
+                        string _A_PaymentMonth, 
+                        string _A_PaymentYear) {
                 ReportForm252Row rowReportForm252Row = ((ReportForm252Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         _A_CompareCode,
@@ -2167,7 +2200,10 @@ namespace XSCREPORT.Models {
                         _C_ArrestTime,
                         _C_SubDistinct,
                         _C_Distinct,
-                        _C_Province};
+                        _C_Province,
+                        _A_PaymentDay,
+                        _A_PaymentMonth,
+                        _A_PaymentYear};
                 rowReportForm252Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowReportForm252Row);
                 return rowReportForm252Row;
@@ -2206,6 +2242,9 @@ namespace XSCREPORT.Models {
                 this._columnC_SubDistinct = base.Columns["C.SubDistinct"];
                 this._columnC_Distinct = base.Columns["C.Distinct"];
                 this._columnC_Province = base.Columns["C.Province"];
+                this._columnA_PaymentDay = base.Columns["A.PaymentDay"];
+                this._columnA_PaymentMonth = base.Columns["A.PaymentMonth"];
+                this._columnA_PaymentYear = base.Columns["A.PaymentYear"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2275,6 +2314,18 @@ namespace XSCREPORT.Models {
                 this._columnC_Province.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnC_Province");
                 this._columnC_Province.ExtendedProperties.Add("Generator_UserColumnName", "C.Province");
                 base.Columns.Add(this._columnC_Province);
+                this._columnA_PaymentDay = new global::System.Data.DataColumn("A.PaymentDay", typeof(string), null, global::System.Data.MappingType.Element);
+                this._columnA_PaymentDay.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnA_PaymentDay");
+                this._columnA_PaymentDay.ExtendedProperties.Add("Generator_UserColumnName", "A.PaymentDay");
+                base.Columns.Add(this._columnA_PaymentDay);
+                this._columnA_PaymentMonth = new global::System.Data.DataColumn("A.PaymentMonth", typeof(string), null, global::System.Data.MappingType.Element);
+                this._columnA_PaymentMonth.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnA_PaymentMonth");
+                this._columnA_PaymentMonth.ExtendedProperties.Add("Generator_UserColumnName", "A.PaymentMonth");
+                base.Columns.Add(this._columnA_PaymentMonth);
+                this._columnA_PaymentYear = new global::System.Data.DataColumn("A.PaymentYear", typeof(string), null, global::System.Data.MappingType.Element);
+                this._columnA_PaymentYear.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnA_PaymentYear");
+                this._columnA_PaymentYear.ExtendedProperties.Add("Generator_UserColumnName", "A.PaymentYear");
+                base.Columns.Add(this._columnA_PaymentYear);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4763,6 +4814,54 @@ namespace XSCREPORT.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string _A_PaymentDay {
+                get {
+                    try {
+                        return ((string)(this[this.tableReportForm252._A_PaymentDayColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'A.PaymentDay\' in table \'ReportForm252\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableReportForm252._A_PaymentDayColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string _A_PaymentMonth {
+                get {
+                    try {
+                        return ((string)(this[this.tableReportForm252._A_PaymentMonthColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'A.PaymentMonth\' in table \'ReportForm252\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableReportForm252._A_PaymentMonthColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string _A_PaymentYear {
+                get {
+                    try {
+                        return ((string)(this[this.tableReportForm252._A_PaymentYearColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'A.PaymentYear\' in table \'ReportForm252\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableReportForm252._A_PaymentYearColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Is_A_CompareCodeNull() {
                 return this.IsNull(this.tableReportForm252._A_CompareCodeColumn);
             }
@@ -4951,6 +5050,42 @@ namespace XSCREPORT.Models {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Set_C_ProvinceNull() {
                 this[this.tableReportForm252._C_ProvinceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool Is_A_PaymentDayNull() {
+                return this.IsNull(this.tableReportForm252._A_PaymentDayColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void Set_A_PaymentDayNull() {
+                this[this.tableReportForm252._A_PaymentDayColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool Is_A_PaymentMonthNull() {
+                return this.IsNull(this.tableReportForm252._A_PaymentMonthColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void Set_A_PaymentMonthNull() {
+                this[this.tableReportForm252._A_PaymentMonthColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool Is_A_PaymentYearNull() {
+                return this.IsNull(this.tableReportForm252._A_PaymentYearColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void Set_A_PaymentYearNull() {
+                this[this.tableReportForm252._A_PaymentYearColumn] = global::System.Convert.DBNull;
             }
         }
         

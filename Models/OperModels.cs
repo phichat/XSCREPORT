@@ -12,6 +12,8 @@ namespace XSCREPORT.Models
     public class OperModels
     {
 
+        string[] mounth = { "", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม" };
+
         public DataTable Lawsuitgetbycon(LawsuitArrestgetByConModels model)
         {
             var cc = new cf();
@@ -69,7 +71,7 @@ namespace XSCREPORT.Models
                                         dr2.LawsuitNo = x2.LawsuitNo;
                                         dr2.LawsuitDate = DateTime.Parse(x2.LawsuitDate);
                                         dr2.Lawsuitday = DateTime.Parse(x2.LawsuitDate).ToString("dd");
-                                        string[] mounth = { "", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม" };
+                                        //string[] mounth = { "", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม" };
                                         string dayint = DateTime.Parse(x2.LawsuitDate).ToString("MM");
                                         dr2.Lawsuitmonth = mounth[int.Parse(dayint)];
                                         string sdadasd = DateTime.Parse(x2.LawsuitDate).ToString("yyyy");
@@ -169,7 +171,7 @@ namespace XSCREPORT.Models
                         dr1.ArrestCode = x.ArrestCode;
                         dr1.ArrestStation = x.ArrestStation;
                         dr1.ArrestDay = DateTime.Parse(x.ArrestDate).ToString("dd");
-                        string[] mounth = { "", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม" };
+                        //string[] mounth = { "", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม" };
                         string dayint = DateTime.Parse(x.ArrestDate).ToString("MM");
                         dr1.ArrestMonth = mounth[int.Parse(dayint)];
                         string sdadasd = DateTime.Parse(x.ArrestDate).ToString("yyyy");
@@ -288,7 +290,6 @@ namespace XSCREPORT.Models
             var cc = new cf();
             try
             {
-                var db = new Configs();
 
                 var client = new RestClient("http://" + cc.GetIPCompare + "/ComparegetByCon");
                 var request = new RestRequest(Method.POST);
@@ -322,8 +323,50 @@ namespace XSCREPORT.Models
 
                 DataSet dtsr = new DataSet();
 
+                DATASETREPORT.ReportForm252DataTable dts = new DATASETREPORT.ReportForm252DataTable();
+                DATASETREPORT.ReportForm252Row dr;
+
+
                 if (resA.Data == null)
                     return null;
+                dr = dts.NewReportForm252Row();
+
+                foreach (var A in resA.Data)
+                {
+                    dr._A_CompareCode = A.CompareCode;
+                    dr._A_CompareStation = A.CompareStation;
+                    dr._A_PaymentDay = model.PaymentDate.ToString("dd");
+                    dr._A_PaymentMonth = model.PaymentDate.ToString("MM");
+                    dr._A_PaymentYear = model.PaymentDate.ToString("yyyy");
+                    
+                    foreach(var de in A.CompareDetail)
+                    {
+                        foreach(var deFine in de.CompareDetailFine)
+                        {
+                            foreach(var deRec in deFine.CompareDetailReceipt)
+                            {
+                                if (deRec.PaymentDate == model.PaymentDate)
+                                {
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                foreach(var B in resB.Data)
+                {
+                    foreach(var L in B.CompareArrestLawbreaker)
+                    {
+                        dr._B_LawbreakerFullName += $"{L.LawbreakerTitleName} {L.LawbreakerFirstName} {L.LawbreakerMiddleName} {L.LawbreakerLastName} {L.LawbreakerOtherName}"; 
+                    }
+                }
+
+                foreach(var C in resC.Data)
+                {
+                   
+                }
 
                 return dtsr;
             }
