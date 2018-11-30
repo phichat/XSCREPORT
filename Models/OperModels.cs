@@ -285,9 +285,8 @@ namespace XSCREPORT.Models
             }
         }
 
-        public DataTable GetReportForm252(GetReportForm252Model model)
+        public DataSet GetReportForm252(GetReportForm252Model model)
         {
-
             var cc = new cf();
             try
             {
@@ -321,8 +320,8 @@ namespace XSCREPORT.Models
                 response = client.Execute(request);
                 IRestResponse<List<ArrestgetByCon>> resC = client.Execute<List<ArrestgetByCon>>(request);
 
-                DATASETREPORT.ReportForm252DataTable dts = new DATASETREPORT.ReportForm252DataTable();
-                DATASETREPORT.ReportForm252Row dr2;
+
+                DataSet dtsr = new DataSet();
 
                 DATASETREPORT.ReportForm252DataTable dts = new DATASETREPORT.ReportForm252DataTable();
                 DATASETREPORT.ReportForm252Row dr;
@@ -342,6 +341,8 @@ namespace XSCREPORT.Models
                     
                     foreach(var de in A.CompareDetail)
                     {
+                        dr._A_IndictmentDetailID = de.IndictmentDetailID.ToString();
+
                         foreach(var deFine in de.CompareDetailFine)
                         {
                             foreach(var deRec in deFine.CompareDetailReceipt)
@@ -369,53 +370,7 @@ namespace XSCREPORT.Models
                    
                 }
 
-                foreach (var compare in resA.Data)
-                {
-                    dr2.CompareCode = compare.CompareCode;
-                    dr2.CompareID = compare.CompareID;
-                    dr2.CompareDate = compare.CompareDate;
-                    dr2.CompareStation = compare.CompareStation;
-                    dr2.PaymentDate = model.PaymentDate;
-                    dr2.TotalFine = 0;
-
-                    foreach (var compareDetail in compare.CompareDetail)
-                    {
-                        dr2.IndictmentDetailID = compareDetail.IndictmentDetailID;
-                    
-                        foreach (var detailReceive in compareDetail.CompareDetailReceipt)
-                        {
-
-                            if (detailReceive.PaymentDate == model.PaymentDate)
-                            {
-                                dr2.TotalFine += detailReceive.TotalFine ? detailReceive.TotalFine : 0;
-                            }
-
-
-                        }
-                    }
-
-                }
-
-                if (resB.Data != null)
-                {
-                    foreach (var b in resB.data)
-                    {
-                        dr2.TitleName = b.TitleName;
-                        dr2.FirstName = b.FirstName;
-                        dr2.LastName = b.LastName;
-
-                        //foreach(var b_dtail in CompareArrestIndictmentDetail) {
-                        //    dr2.B.LawbreakerFullName = String.Join(",", b_dtail.CompareArrestLawbreaker.)
-                        //}
-                    }
-                }
-
-                if (resC.Date != null)
-                {
-
-                }
-
-                return dts;
+                return dtsr;
             }
             catch (Exception ex)
             {
