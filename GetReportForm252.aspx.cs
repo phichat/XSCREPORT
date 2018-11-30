@@ -32,7 +32,7 @@ namespace XSCREPORT
                         var js = JsonConvert.DeserializeObject<GetReportForm252Model>(requestFromPost);
                         if (js != null)
                         {
-                            DataSet dtt = new OperModels().GetReportForm252(js);
+                            DataTable dtt = new OperModels().GetReportForm252(js);
                             ReportDocument rpt = new ReportDocument();
 
                             rpt.Load(Server.MapPath("~/ReportModels/ILL_P028.rpt"));
